@@ -1,0 +1,54 @@
+POST /MfgArea/UserExercise/GetQuestionDetail HTTP/1.1
+Host: mfg.mofangge.com
+mfg_token: CB1B1F11D4F6FAB257939DC0166F50F42539838EF66227990B454E458DC8B19874545B9E4C72A12B78792A999B9760D905502049444558ED46E8BAADEA3D5A093DBB4C9AE2816CCCCA4D61D2D7032CCB
+Accept: */*
+mfg_cq: AppStore
+X-Requested-With: XMLHttpRequest
+mfg_cv: 2.9.0
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+User-Agent: MFGPK/2.9.0 CFNetwork/758.2.8 Darwin/15.0.0
+mfg_ct: 1
+mfg_cn: 1
+Connection: keep-alive
+mfg_cs: ios9
+mfg_cm: iPhone 6Plus
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+GET /android/czyw/keypoint-trees?platform=android22&version=5.5.0&vendor=tencent&av=11&_productId=111&_deviceId=7711888079992669590 HTTP/1.1
+Accept-Encoding: gzip
+Host: www.yuantiku.com
+Connection: Keep-Alive
+Cookie: sid=376073091471683056; userid=32751869; sess="jEceeN8juGV73lwfjYAbVbJRS1N81disYAoAdQAsp/+eTdd/hytSqx3q3Glmc+gyZDc/0ga9w69ovplLafNMoF8ygND99nDxKxB4NTDrYqY=";$Path="/";$Domain=".yuantiku.com"; persistent=QJpzdnlixGVZBNUKv1LEuH8NxwJOoULtHUp1v9LkTcXyYP27Rb0Lu+5LjNpcm+8Kuwl8SYoDZEi3MmBvsYOiYw==
+User-Agent: ape-android
+Pragma: no-cache
+Cache-Control: no-cache
+

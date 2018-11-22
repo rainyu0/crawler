@@ -1,0 +1,423 @@
+
+1)
+POST /MfgArea/UserExercise/GetTextbookChapter HTTP/1.1
+Host: mfg.mofangge.com
+Cookie: mfg_findPwd_Img=76c12eea-318d-4ed6-a603-08659a52f483
+mfg_token: 208B752E12AB98CFC26A309ABD2F22DC9AA50B8A78EE54B9DD4A312BCAC878D78A4A5A8EA2C76C2127E87B43747E88DEA6F5F82356BB50C43EB5C877AFC9B50DE63C0426140A075DF66775ABB8D988AC
+Accept: */*
+mfg_cq: AppStore
+X-Requested-With: XMLHttpRequest
+mfg_cv: 2.8.1
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 60
+User-Agent: MFGPK/2.8.1 CFNetwork/758.0.2 Darwin/15.0.0
+mfg_ct: 1
+mfg_cn: 1
+Connection: keep-alive
+mfg_cs: ios9
+mfg_cm: iPhone 6Plus
+Pragma: no-cache
+Cache-Control: no-cache
+term=0&subject=02&grade=c1&science=2&edution=0&bookid=001c10
+---------------------
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 21 Oct 2015 12:46:40 GMT
+Content-Length: 573
+Expires: 0
+Cache-Control: no-cache
+{
+	"status": "11-001",
+	"result": {
+		"bookCode": 1,
+		"bookList": [{
+			"bookId": "001c10",
+			"subject": "02",
+			"term": "0",
+			"termName": "七年级上",
+			"isSelect": true
+		}, {
+			"bookId": "001c11",
+			"subject": "02",
+			"term": "1",
+			"termName": "七年级下",
+			"isSelect": false
+		}],
+		"chapterList": [{
+			"chapterId": "001c1001",
+			"chapterName": "有理数",
+			"cupSum": 57,
+			"cupHave": 0
+		}, {
+			"chapterId": "001c1002",
+			"chapterName": "整式的加减",
+			"cupSum": 30,
+			"cupHave": 0
+		}, {
+			"chapterId": "001c1003",
+			"chapterName": "一元一次方程",
+			"cupSum": 21,
+			"cupHave": 0
+		}, {
+			"chapterId": "001c1004",
+			"chapterName": "几何图形初步",
+			"cupSum": 24,
+			"cupHave": 0
+		}]
+	}
+}
+
+
+2)
+POST /MfgArea/UserExercise/GetKnowledgePointList HTTP/1.1
+Host: mfg.mofangge.com
+Cookie: mfg_findPwd_Img=76c12eea-318d-4ed6-a603-08659a52f483
+mfg_token: 208B752E12AB98CFC26A309ABD2F22DC9AA50B8A78EE54B9DD4A312BCAC878D78A4A5A8EA2C76C2127E87B43747E88DEA6F5F82356BB50C43EB5C877AFC9B50DE63C0426140A075DF66775ABB8D988AC
+Accept: */*
+mfg_cq: AppStore
+X-Requested-With: XMLHttpRequest
+mfg_cv: 2.8.1
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 38
+User-Agent: MFGPK/2.8.1 CFNetwork/758.0.2 Darwin/15.0.0
+mfg_ct: 1
+mfg_cn: 1
+Connection: keep-alive
+mfg_cs: ios9
+mfg_cm: iPhone 6Plus
+Pragma: no-cache
+Cache-Control: no-cache
+
+subject=02&chapterid=001c1002&grade=c1
+-----------------------------
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 21 Oct 2015 12:46:43 GMT
+Content-Length: 629
+Expires: 0
+Cache-Control: no-cache
+{
+	"status": "11-001",
+	"result": {
+		"knowledgeList": [{
+			"pointId": "277",
+			"pointName": "代数式的概念",
+			"cupSum": 0
+		}, {
+			"pointId": "269",
+			"pointName": "写代数式",
+			"cupSum": 0
+		}, {
+			"pointId": "273",
+			"pointName": "单项式",
+			"cupSum": 0
+		}, {
+			"pointId": "274",
+			"pointName": "多项式",
+			"cupSum": 0
+		}, {
+			"pointId": "278",
+			"pointName": "整式的定义",
+			"cupSum": 0
+		}, {
+			"pointId": "270",
+			"pointName": "代数式的求值",
+			"cupSum": 0
+		}, {
+			"pointId": "275",
+			"pointName": "同类项",
+			"cupSum": 0
+		}, {
+			"pointId": "314",
+			"pointName": "合并同类项",
+			"cupSum": 0
+		}, {
+			"pointId": "271",
+			"pointName": "去括号与添括号",
+			"cupSum": 0
+		}, {
+			"pointId": "272",
+			"pointName": "整式的加减",
+			"cupSum": 0
+		}]
+	}
+}
+
+
+3)
+POST /MfgArea/UserExercise/GetKnowledgePkInfo HTTP/1.1
+Host: mfg.mofangge.com
+Cookie: mfg_findPwd_Img=76c12eea-318d-4ed6-a603-08659a52f483
+mfg_token: 208B752E12AB98CFC26A309ABD2F22DC9AA50B8A78EE54B9DD4A312BCAC878D78A4A5A8EA2C76C2127E87B43747E88DEA6F5F82356BB50C43EB5C877AFC9B50DE63C0426140A075DF66775ABB8D988AC
+Accept: */*
+mfg_cq: AppStore
+X-Requested-With: XMLHttpRequest
+mfg_cv: 2.8.1
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 32
+User-Agent: MFGPK/2.8.1 CFNetwork/758.0.2 Darwin/15.0.0
+mfg_ct: 1
+mfg_cn: 1
+Connection: keep-alive
+mfg_cs: ios9
+mfg_cm: iPhone 6Plus
+Pragma: no-cache
+Cache-Control: no-cache
+
+knowid=277&grade=c1&subjectId=02
+-----------------------------
+{"status":"11-001","result":{"isExercice":0,"ispk":1,"isPkFriend":0,"exerciceSum":2,"pkWin":0,"pkFail":0,"pkFriendWin":0,"pkFriendFail":0}}
+
+
+4)
+POST /MfgArea/UserExercise/GetQuestionDetail HTTP/1.1
+Host: mfg.mofangge.com
+Cookie: mfg_findPwd_Img=76c12eea-318d-4ed6-a603-08659a52f483
+mfg_token: 208B752E12AB98CFC26A309ABD2F22DC9AA50B8A78EE54B9DD4A312BCAC878D78A4A5A8EA2C76C2127E87B43747E88DEA6F5F82356BB50C43EB5C877AFC9B50DE63C0426140A075DF66775ABB8D988AC
+Accept: */*
+mfg_cq: AppStore
+X-Requested-With: XMLHttpRequest
+mfg_cv: 2.8.1
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 26
+User-Agent: MFGPK/2.8.1 CFNetwork/758.0.2 Darwin/15.0.0
+mfg_ct: 1
+mfg_cn: 1
+Connection: keep-alive
+mfg_cs: ios9
+mfg_cm: iPhone 6Plus
+Pragma: no-cache
+Cache-Control: no-cache
+
+grade=c1&sub=02&knowId=277
+------------------------
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 21 Oct 2015 12:46:59 GMT
+Content-Length: 11343
+Expires: 0
+Cache-Control: no-cache
+
+{
+	"status": "11-001",
+	"result": {
+		"questionCount": 5,
+		"questionList": [{
+			"id": 706099,
+			"body": "\u003cTABLE style=\"WORD-BREAK: break-all;color:#666666\"  cellSpacing=0 width:100%\u003e\n\u003cTBODY\u003e\n\u003cTR\u003e\n\u003cTD\u003e(2013 泰州月考)\u003c/TD\u003e\u003c/TR\u003e\u003c/TBODY\u003e\u003c/TABLE\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003cdiv\u003e下列说法正确的个数是 (\u0026nbsp;\u0026nbsp;\u0026nbsp; )\u003cbr\u003e①无理数都是无限小数；②\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823020210070533.png\" style=\"vertical-align:middle;\"\u003e的平方根是±2 ；③ 对角线互相垂直的菱形是正方形；④ 坐标平面上的点与有序实数对一一对应．\u003ctable name=\"optionsTable\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"\u003e\u003ctr\u003e\u003ctd\u003eA．1个\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eB． 2个\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eC． 3个\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eD． 4个\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003cscript type=\u0027text/javascript\u0027 defer=\u0027defer\u0027\u003ewindow.addEventListener(\u0027load\u0027,function(){var imgArr =document.getElementsByTagName(\u0027img\u0027);if(imgArr.length \u003e= 1){for(var i= 0;i \u003c imgArr.length ;i++){var img = imgArr[i];var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;if(w\u003c=0 || w==\u0027NaN\u0027){w=305;};if(img.width \u003e w){img.setAttribute(\u0027width\u0027,\u0027100%\u0027);}img.setAttribute(\u0027max-width\u0027,\u0027100%\u0027);}} var tableArr = document.getElementsByTagName(\u0027TABLE\u0027);if(tableArr.length \u003e 0){var tb = tableArr[0];               var text = tb.style.cssText + \u0027 line-height:150%;-webkit-text-size-adjust:none;\u0027;tb.setAttribute(\u0027style\u0027,text);}    }) \u003c/script\u003e",
+			"option": "ABCD",
+			"type": 1
+		}, {
+			"id": 706214,
+			"body": "\u003cTABLE style=\"WORD-BREAK: break-all;color:#666666\"  cellSpacing=0 width:100%\u003e\n\u003cTBODY\u003e\n\u003cTR\u003e\n\u003cTD\u003e(2014 许镇中心初中月考)\u003c/TD\u003e\u003c/TR\u003e\u003c/TBODY\u003e\u003c/TABLE\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003cdiv\u003e已知a、b、c为△ABC三边，且方程（x－a）（x－b）+（x－b）（x－c）+（x－c）（x－a）＝0有两个相等实数根，则△ABC为\u0026nbsp;（\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;）\u003ctable name=\"optionsTable\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"\u003e\u003ctr\u003e\u003ctd\u003eA．两腰和底不等的等腰三角形\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eB．等边三角形\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eC．直角三角形\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eD．等腰直角三角形\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003cscript type=\u0027text/javascript\u0027 defer=\u0027defer\u0027\u003ewindow.addEventListener(\u0027load\u0027,function(){var imgArr =document.getElementsByTagName(\u0027img\u0027);if(imgArr.length \u003e= 1){for(var i= 0;i \u003c imgArr.length ;i++){var img = imgArr[i];var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;if(w\u003c=0 || w==\u0027NaN\u0027){w=305;};if(img.width \u003e w){img.setAttribute(\u0027width\u0027,\u0027100%\u0027);}img.setAttribute(\u0027max-width\u0027,\u0027100%\u0027);}} var tableArr = document.getElementsByTagName(\u0027TABLE\u0027);if(tableArr.length \u003e 0){var tb = tableArr[0];               var text = tb.style.cssText + \u0027 line-height:150%;-webkit-text-size-adjust:none;\u0027;tb.setAttribute(\u0027style\u0027,text);}    }) \u003c/script\u003e",
+			"option": "ABCD",
+			"type": 1
+		}, {
+			"id": 706254,
+			"body": "\u003cTABLE style=\"WORD-BREAK: break-all;color:#666666\"  cellSpacing=0 width:100%\u003e\n\u003cTBODY\u003e\n\u003cTR\u003e\n\u003cTD\u003e(2014 苏州期末)\u003c/TD\u003e\u003c/TR\u003e\u003c/TBODY\u003e\u003c/TABLE\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003cdiv\u003e在整式大家庭中，有5个成员：①\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823020227386390.png\" style=\"vertical-align:middle;\"\u003e；②\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823020227402518.png\" style=\"vertical-align:middle;\"\u003e；③\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823020227417503.png\" style=\"vertical-align:middle;\"\u003e；④\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823020227433379.png\" style=\"vertical-align:middle;\"\u003e；⑤\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823020227527403.png\" style=\"vertical-align:middle;\"\u003e，其中属于单项式家族的有\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u003ctable name=\"optionsTable\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"\u003e\u003ctr\u003e\u003ctd\u003eA．1个\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eB．2个\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eC．3个\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eD．4个\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003cscript type=\u0027text/javascript\u0027 defer=\u0027defer\u0027\u003ewindow.addEventListener(\u0027load\u0027,function(){var imgArr =document.getElementsByTagName(\u0027img\u0027);if(imgArr.length \u003e= 1){for(var i= 0;i \u003c imgArr.length ;i++){var img = imgArr[i];var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;if(w\u003c=0 || w==\u0027NaN\u0027){w=305;};if(img.width \u003e w){img.setAttribute(\u0027width\u0027,\u0027100%\u0027);}img.setAttribute(\u0027max-width\u0027,\u0027100%\u0027);}} var tableArr = document.getElementsByTagName(\u0027TABLE\u0027);if(tableArr.length \u003e 0){var tb = tableArr[0];               var text = tb.style.cssText + \u0027 line-height:150%;-webkit-text-size-adjust:none;\u0027;tb.setAttribute(\u0027style\u0027,text);}    }) \u003c/script\u003e",
+			"option": "ABCD",
+			"type": 1
+		}, {
+			"id": 712745,
+			"body": "\u003cTABLE style=\"WORD-BREAK: break-all;color:#666666\"  cellSpacing=0 width:100%\u003e\n\u003cTBODY\u003e\n\u003cTR\u003e\n\u003cTD\u003e(2013 山西农大附中月考)\u003c/TD\u003e\u003c/TR\u003e\u003c/TBODY\u003e\u003c/TABLE\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003cdiv\u003e在下列各数0，0.2，3π，\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823021817334387.png\" style=\"vertical-align:middle;\"\u003e，6.1010010001…（两个1之间依次增加1个0），\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823021817350288.png\" style=\"vertical-align:middle;\"\u003e中，无理数的个数是\u003ctable name=\"optionsTable\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"\u003e\u003ctr\u003e\u003ctd\u003eA．1\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eB．2\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eC．3\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eD．4\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003cscript type=\u0027text/javascript\u0027 defer=\u0027defer\u0027\u003ewindow.addEventListener(\u0027load\u0027,function(){var imgArr =document.getElementsByTagName(\u0027img\u0027);if(imgArr.length \u003e= 1){for(var i= 0;i \u003c imgArr.length ;i++){var img = imgArr[i];var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;if(w\u003c=0 || w==\u0027NaN\u0027){w=305;};if(img.width \u003e w){img.setAttribute(\u0027width\u0027,\u0027100%\u0027);}img.setAttribute(\u0027max-width\u0027,\u0027100%\u0027);}} var tableArr = document.getElementsByTagName(\u0027TABLE\u0027);if(tableArr.length \u003e 0){var tb = tableArr[0];               var text = tb.style.cssText + \u0027 line-height:150%;-webkit-text-size-adjust:none;\u0027;tb.setAttribute(\u0027style\u0027,text);}    }) \u003c/script\u003e",
+			"option": "ABCD",
+			"type": 1
+		}, {
+			"id": 712747,
+			"body": "\u003cTABLE style=\"WORD-BREAK: break-all;color:#666666\"  cellSpacing=0 width:100%\u003e\n\u003cTBODY\u003e\n\u003cTR\u003e\n\u003cTD\u003e(2014 山西农大附中月考)\u003c/TD\u003e\u003c/TR\u003e\u003c/TBODY\u003e\u003c/TABLE\u003e\u003ctable\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd\u003e\u003cdiv\u003e下列说法不正确的是\u003ctable name=\"optionsTable\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\"\u003e\u003ctr\u003e\u003ctd\u003eA．27的立方根是\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823021817475286.png\" style=\"vertical-align:middle;\"\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eB．\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823021817490511.png\" style=\"vertical-align:middle;\"\u003e的立方根是\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823021817506365.png\" style=\"vertical-align:middle;\"\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eC．\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823021817537280.png\" style=\"vertical-align:middle;\"\u003e的立方是\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823021817553304.png\" style=\"vertical-align:middle;\"\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eD．16的平方根是±4\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\u003cscript type=\u0027text/javascript\u0027 defer=\u0027defer\u0027\u003ewindow.addEventListener(\u0027load\u0027,function(){var imgArr =document.getElementsByTagName(\u0027img\u0027);if(imgArr.length \u003e= 1){for(var i= 0;i \u003c imgArr.length ;i++){var img = imgArr[i];var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;if(w\u003c=0 || w==\u0027NaN\u0027){w=305;};if(img.width \u003e w){img.setAttribute(\u0027width\u0027,\u0027100%\u0027);}img.setAttribute(\u0027max-width\u0027,\u0027100%\u0027);}} var tableArr = document.getElementsByTagName(\u0027TABLE\u0027);if(tableArr.length \u003e 0){var tb = tableArr[0];               var text = tb.style.cssText + \u0027 line-height:150%;-webkit-text-size-adjust:none;\u0027;tb.setAttribute(\u0027style\u0027,text);}    }) \u003c/script\u003e",
+			"option": "ABCD",
+			"type": 1
+		}]
+	}
+}
+
+5)
+POST /MfgArea/UserExercise/GetUserExerciseSingleResult HTTP/1.1
+Host: mfg.mofangge.com
+Cookie: mfg_findPwd_Img=76c12eea-318d-4ed6-a603-08659a52f483
+mfg_token: 208B752E12AB98CFC26A309ABD2F22DC9AA50B8A78EE54B9DD4A312BCAC878D78A4A5A8EA2C76C2127E87B43747E88DEA6F5F82356BB50C43EB5C877AFC9B50DE63C0426140A075DF66775ABB8D988AC
+Accept: */*
+mfg_cq: AppStore
+X-Requested-With: XMLHttpRequest
+mfg_cv: 2.8.1
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 171
+User-Agent: MFGPK/2.8.1 CFNetwork/758.0.2 Darwin/15.0.0
+mfg_ct: 1
+mfg_cn: 1
+Connection: keep-alive
+mfg_cs: ios9
+mfg_cm: iPhone 6Plus
+Pragma: no-cache
+Cache-Control: no-cache
+
+chapterId=001c1002&knowid=277&questionResult=706099%2CC%2C3%7C706214%2CC%2C1%7C706254%2CB%2C1%7C712745%2CB%2C2%7C712747%2CC%2C1&useTime=6&grade=c1&subjectId=02&phoneType=9
+------------------------------
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 21 Oct 2015 12:47:05 GMT
+Content-Length: 502
+Expires: 0
+Cache-Control: no-cache
+{
+	"status": "11-001",
+	"result": {
+		"questionResult": "706099,False,B,C|706214,False,B,C|706254,False,C,B|712745,False,C,B|712747,False,A,C",
+		"subjectId": "02",
+		"chapterId": "001c1002",
+		"pointId": "277",
+		"grade": "c1",
+		"accuracy": "0",
+		"useTime": "6",
+		"beans": "0",
+		"experience": "0",
+		"historyExp": "6",
+		"beansCountIsGT": "False",
+		"expsCountIsGT": "False",
+		"roundCount": "False",
+		"isGetAward": "False",
+		"awardType": "0",
+		"awardInfo": "0",
+		"propsType": "0",
+		"propsEffect": "0",
+		"currentStage": "1",
+		"pointCupSum": "0",
+		"newStage": "1",
+		"newPoint": "6"
+	}
+}
+
+
+6)
+POST /MfgArea/UserExercise/GetQuestionAnalysis HTTP/1.1
+Host: mfg.mofangge.com
+Cookie: mfg_findPwd_Img=76c12eea-318d-4ed6-a603-08659a52f483
+mfg_token: 208B752E12AB98CFC26A309ABD2F22DC9AA50B8A78EE54B9DD4A312BCAC878D78A4A5A8EA2C76C2127E87B43747E88DEA6F5F82356BB50C43EB5C877AFC9B50DE63C0426140A075DF66775ABB8D988AC
+Accept: */*
+mfg_cq: AppStore
+X-Requested-With: XMLHttpRequest
+mfg_cv: 2.8.1
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 21
+User-Agent: MFGPK/2.8.1 CFNetwork/758.0.2 Darwin/15.0.0
+mfg_ct: 1
+mfg_cn: 1
+Connection: keep-alive
+mfg_cs: ios9
+mfg_cm: iPhone 6Plus
+Pragma: no-cache
+Cache-Control: no-cache
+
+sub=02&topicId=706099
+------------------------------
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: application/json; charset=utf-8
+Server: Microsoft-IIS/7.5
+X-AspNetMvc-Version: 4.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 21 Oct 2015 12:47:13 GMT
+Content-Length: 3099
+Expires: 0
+Cache-Control: no-cache
+{
+	"status": "11-001",
+	"result": "\u003ctable style=\"WORD-BREAK: break-all;\" border=\"0\" cellspacing=\"0\" width=\"100%\"\u003e\u003ctr style=\"margin-top: 2em\"\u003e\u003ctd\u003e\u003cspan style=\"font-family: \u0027应用字体 Regular\u0027, \u0027应用字体\u0027;\"\u003e试题难度：\u003c/span\u003e\u003cimg style=\"height:1em\" src=\"http://pic2.mofangge.com/img/photo/star_l.png\" /\u003e\u003cimg style=\"height:1em\" src=\"http://pic2.mofangge.com/img/photo/star_l.png\" /\u003e\u003cimg style=\"height:1em\" src=\"http://pic2.mofangge.com/img/photo/star_l.png\" /\u003e\u003cimg style=\"height:1em\" src=\"http://pic2.mofangge.com/img/photo/star_h.png\" /\u003e\u003cimg style=\"height:1em\" src=\"http://pic2.mofangge.com/img/photo/star_h.png\" /\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr \u003e\u003ctd style=\"padding-top:1em\"\u003e\u003cp\u003e\u003cspan style=\"font-family: \u0027应用字体 Regular\u0027, \u0027应用字体\u0027;  color: #329b97;\"\u003e解答：\u003c/span\u003e\u003c/p\u003e\u003c/td\u003e\u003c/tr\u003e \u003c/table\u003e\u003cdiv\u003e解：②\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823020210070533.png\" style=\"vertical-align:middle;\"\u003e=2，2平方根是\u003cimg src=\"http://pic2.mofangge.com/upload/papers//20140823/20140823020210086376.png\" style=\"vertical-align:middle;\"\u003e；③对角线相等的菱形是正方形，①④正确，故选B。\u003c/div\u003e\u003ctable style=\"WORD-BREAK: break-all\" border=\"0\" cellspacing=\"0\" width=\"100%\"\u003e\u003ctr\u003e\u003ctd style=\"padding-top:1em\"\u003e \u003cp\u003e\u003cspan style=\"font-family: \u0027应用字体 Regular\u0027, \u0027应用字体\u0027; color: #329b97;\"\u003e考点：\u003c/span\u003e\u003c/p\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan \u003e代数式的概念\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan \u003e整式的定义\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan \u003e整式的加减\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003e\u003cspan \u003e整式的除法\u003c/span\u003e\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003cscript type=\u0027text/javascript\u0027 defer=\u0027defer\u0027\u003ewindow.addEventListener(\u0027load\u0027,function(){var imgArr =document.getElementsByTagName(\u0027img\u0027);if(imgArr.length \u003e= 1){for(var i= 0;i \u003c imgArr.length ;i++){var img = imgArr[i];var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;if(w\u003c=0 || w==\u0027NaN\u0027){w=305;};if(img.width \u003e w){img.setAttribute(\u0027width\u0027,\u0027100%\u0027);}img.setAttribute(\u0027max-width\u0027,\u0027100%\u0027);}} var tableArr = document.getElementsByTagName(\u0027TABLE\u0027);if(tableArr.length \u003e 0){var tb = tableArr[0];               var text = tb.style.cssText + \u0027 line-height:150%;-webkit-text-size-adjust:none;\u0027;tb.setAttribute(\u0027style\u0027,text);}    }) \u003c/script\u003e"
+}
+
+
+7)
+POST /MfgArea/UserBasicInfo/GetAllBookList HTTP/1.1
+Host: mfg.mofangge.com
+mfg_token: 208B752E12AB98CFC26A309ABD2F22DC9AA50B8A78EE54B9DD4A312BCAC878D78A4A5A8EA2C76C21BC7637AF46D684741FF9A9135C6BC9F673470464AB34B2ABCD7FD6E516CEE2891FBE647790A01FD9
+Accept: */*
+mfg_cq: AppStore
+X-Requested-With: XMLHttpRequest
+mfg_cv: 2.8.1
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 39
+User-Agent: MFGPK/2.8.1 CFNetwork/758.0.2 Darwin/15.0.0
+mfg_ct: 1
+mfg_cn: 1
+Connection: keep-alive
+mfg_cs: ios9
+mfg_cm: iPhone 6Plus
+Pragma: no-cache
+Cache-Control: no-cache
+
+subject=02&grade=c1&edution=0&science=2
+--------
+{
+	"status": "11-001",
+	"result": [{
+		"edition": "人教版",
+		"selectEdition": "人教版",
+		"bookList": [{
+			"grade": "c1",
+			"gradeTerm": 0,
+			"subject": "02",
+			"bookId": "001c10",
+			"bookName": "七年级上",
+			"bookTerm": 0,
+			"bookVersion": "人教版",
+			"pic": "http://pic1.mofangge.com/upload/other/20120830/2012083009133191685301.jpg",
+			"bookVersionNumber": "01"
+		}, {
+			"grade": "c1",
+			"gradeTerm": 0,
+			"subject": "02",
+			"bookId": "001c11",
+			"bookName": "七年级下",
+			"bookTerm": 1,
+			"bookVersion": "人教版",
+			"pic": "http://pic1.mofangge.com/upload/other/20120718/2012071815145177029425.jpg",
+			"bookVersionNumber": "01"
+		}, {
+			"grade": "c2",
+			"gradeTerm": 0,
+			"subject": "02",
+			"bookId": "001c20",
+			"bookName": "八年级上",
+			"bookTerm": 0,
+			"bookVersion": "人教版",
+			"pic": "http://pic2.mofangge.com/upload/other/20130904/2013090409421785973020.jpg",
+			"bookVersionNumber": "01"
+		}
+
+
+

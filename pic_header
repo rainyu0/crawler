@@ -1,0 +1,10 @@
+GET /upload/papers//20140823/20140823021613205360.png HTTP/1.1
+Host: pic2.mofangge.com
+Accept: */*
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13C75
+Accept-Language: zh-cn
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+

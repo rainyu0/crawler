@@ -1,0 +1,6 @@
+GET /v1_tiku/course-section/question?source=androidTeacher&version=2700&channel=Knowbox&token=2vtEBmbbLtKABuWJaJVpz96x3U5flA1Wnd6%2B0nH%2B/wdf%2BgWH1erL9IypNye1q5oS&coursesection_id=172095&question_type=-1&collect=0&out=0&page_size=10&page_num=0&kbparam=9FD1B6A80DED8AA6930B570DD84CFDA3 HTTP/1.1
+Accept-Encoding: gzip
+Host: api.knowbox.cn
+Connection: Keep-Alive
+Pragma: no-cache
+Cache-Control: no-cache
