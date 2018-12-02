@@ -1,24 +1,26 @@
 #!/usr/bin/python
-import MySQLdb
+# -*- coding: utf-8 -*-
 
+import MySQLdb
+import json
 import config
 from common.mysql_pool import Mysql_Pool
 
 Question_Tag = '霍兰德职业兴趣测验'
 
 def insert_question(one_question):
-    one_question['content'] = ''
-    sql = 'insert into question_bank(question_id, question_tag, gmt_modified, ' \
-          'evaluation_type, question_head, question_body, ' \
-          'question_options, grade_type,',' evaluation_attr, ' \
-                                          'order_no) ' \
-          'values(%s, %s, %s, %s, %s, %s, %s, %s, %s) ' \
-          ' on duplicate key update order_no = %s, question_head = %s, question_body = %s'
-    params_con = (one_question['question_id'], one_question['question_tag'], 'now()',
-               one_question['evaluation_type'], one_question['question_head'], one_question['question_body'],
-               one_question['question_options'], one_question['grade_type'],one_question['evaluation_attr'],
-               one_question['order_no'],
-               one_question['order_no'], one_question['question_head'], one_question['question_body']
+    one_question["content"] = ""
+    sql = "insert into question_bank(question_id, question_tag, gmt_modified, " \
+          "evaluation_type, question_head, question_body, " \
+          "question_options, grade_type,"," evaluation_attr, " \
+                                          "order_no) " \
+          "values(%s, %s, %s, %s, %s, %s, %s, %s, %s) " \
+          " on duplicate key update order_no = %s, question_head = %s, question_body = %s"
+    params_con = (one_question["question_id"], one_question["question_tag"], "now()",
+               one_question["evaluation_type"], one_question["question_head"], one_question["question_body"],
+               one_question["question_options"], one_question["grade_type"],one_question["evaluation_attr"],
+               one_question["order_no"],
+               one_question["order_no"], one_question["question_head"], one_question["question_body"]
            )
     cu = Mysql_Pool.get_conn().cursor()
     cu.execute(sql, params_con)
@@ -48,17 +50,20 @@ def get_evaluation_type(order_no):
         ret = 'C'
     return ret
 
+def writeDict(question):
+    return
 
 def dispose_question_file(file_str, question_head):
-    fd = open('file_str', 'r')
+    fd = open(file_str, 'r')
+    fdout = open("question_out.txt", 'a+')
     file_lines = fd.readlines()
     for line in file_lines:
-        print line
         arr = line.split('.')
         if len(arr) == 1 :
             continue
         order_no = arr[0]
         qid = config.question_id + 1
+        config.question_id += 1
         one_question = {'question_id' : qid, 'question_tag' : Question_Tag, 'question_head' : question_head}
         one_question['question_body'] = line
         one_question['evaluation_type'] = 1
@@ -66,15 +71,42 @@ def dispose_question_file(file_str, question_head):
         one_question['grade_type'] = 1
         one_question['evaluation_attr'] = get_evaluation_type(order_no)
         one_question['order_no'] = order_no
-        insert_question(one_question)
+        #insert_question(one_question)
+        json_str = json.dumps(one_question, ensure_ascii=False, indent=2)
+        fdout.write(json_str)
+        fdout.write('\n')
 
     fd.close()
+    fdout.close()
 
+def dispose_output_file(file_str):
+    fd = open(file_str, 'r')
+    fdout = open("out.txt", 'w')
+    file_lines = fd.readlines()
+    desc = ''
+    code = ''
+    for line in file_lines:
+        if line.strip().isalpha():
+            code = line.strip()
+        elif len(line) > 1:
+            desc += line
+        else:
+            #id = ord(code[0]) + ord(code[1]) + ord(code[2])
+            oneOut = {'answer_code': code, 'answer_desc': desc, 'evaluation_type': 1}
+            json_str = json.dumps(oneOut, ensure_ascii=False, indent=2)
+            fdout.write(json_str)
+            fdout.write('\n')
+            code = ''
+            desc = ''
+
+    fd.close()
+    fdout.close()
 
 if __name__ == '__main__':
     Mysql_Pool.connect_mysql(config)
-    dispose_question_file('first.txt','您愿意从事下列活动吗？')
-    dispose_question_file('second.txt','您具有擅长或胜任下列活动的能力吗？')
+    # dispose_question_file('first.txt','您愿意从事下列活动吗？')
+    # dispose_question_file('second.txt','您具有擅长或胜任下列活动的能力吗？')
+    dispose_output_file('output.txt')
 
 
 

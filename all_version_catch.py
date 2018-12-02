@@ -5,7 +5,6 @@ import sys
 
 import httplib
 import urllib
-import json
 import time
 import MySQLdb
 import json
